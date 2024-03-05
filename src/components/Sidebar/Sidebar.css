@@ -1,0 +1,13 @@
+.sidebar-imageLink {
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+}
+
+.sidebar-image {
+  width: 70%;
+}
+
+.sidebar-label {
+    color: black;
+  }

@@ -1,0 +1,32 @@
+.nav-toolbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 100%;
+
+}
+.nav-toggleTheme {
+    margin-left: 240px;
+}
+
+
+.nav-menuButton {
+    @media (min-width: 600px){
+        display: none;
+    }
+}
+
+.nav-linkButton:hover {
+    color: white;
+    text-decoration: none;
+}
+.nav-drawer {
+    @media (min-width: 600px){
+        width: 240px;
+        flex-shrink: 0;
+    }
+}
+.nav-drawerPaper {
+    width: 240px;
+}
