@@ -35,12 +35,17 @@ const Navbar = () => {
               edge="start"
               style={{ outline: "none" }}
               className="nav-menuButton"
-              onClick={() => {}}
+              onClick={() => {setMobileOpen((prevMobileOpen) => !prevMobileOpen)}}
             >
               <Menu />
             </IconButton>
           )}
-          <IconButton style={{marginLeft: isMobile ? 0 : '240px'}} color="inherit" sx={{ ml: 1 }} onClick={() => {}}>
+          <IconButton
+            style={{ marginLeft: isMobile ? 0 : "240px" }}
+            color="inherit"
+            sx={{ ml: 1 }}
+            onClick={() => {}}
+          >
             {theme.palette.mode === "dark" ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
           {!isMobile && "Search..."}
@@ -76,6 +81,7 @@ const Navbar = () => {
               variant="temporary"
               anchor="right"
               open={mobileOpen}
+              onClose={() => setMobileOpen((prevMobileOpen) => !prevMobileOpen)}
               className="nav-drawerPaper"
               ModalProps={{ keepMounted: true }}
             >
